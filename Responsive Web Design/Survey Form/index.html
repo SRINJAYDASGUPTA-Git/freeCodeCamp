@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Server Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body background="https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg">
+<h1 id="title">Minecraft Server Survey Form</h1>
+<p id="description">Please fill out this form with the required information</p>
+<div class="overlay">
+  <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name">Name: <input id="name" name="first-name" type="text" required placeholder="Enter your full name"/></label>
+    <label id="email-label"  for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Enter your Email id"/></label>
+    <label id="number-label"for="number">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age"/></label>
+  </fieldset>
+  <fieldset>
+    <label for="">Type of Account</label>
+    <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="Java"/> Java Edition</label>
+    <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="Bedrock"/> Bedrock Edition </label>
+    <label for="terms-and-conditions">
+      <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="TandC" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+    </label>
+    <label for="no-xray">
+      <input id="no-xray" type="checkbox" required name="no-xray" class="inline" value="no-xray"/> I swear not to user <b>X-ray Resource Packs</b>
+    </label>
+  </fieldset>
+  <fieldset>
+    <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+
+    <label for="dropdown">How did you hear about us?
+      <select id="dropdown" name="referrer">
+        <option value="">(select one)</option>
+        <option value="1">YouTube</option>
+        <option value="2">Friends</option>
+        <option value="3">Social Media</option>
+        <option value="4">Other</option>
+      </select>
+    </label>
+    <label for="bio">Provide a bio:
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+    </label>
+  </fieldset>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+</div>
+
+</body>
+</html>
